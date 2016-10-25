@@ -1,14 +1,19 @@
-<!--
-  This template loads for the 'tab.friend-detail' state (app.js)
-  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-  The FriendsCtrl pulls data from the Friends service (service.js)
-  The Friends service returns an array of friend data
--->
-<ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+<ion-view hide-nav-bar="true" scroll="false">
+  <ion-content class="dark-background login">
+    <ion-slide-box>
+      <ion-slide ng-repeat="step in aid.steps">
+        <div class="step">
+          <img ng-src="{{step}}">
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="step">
+          <h1>{{aid.quiz.question}}</h1>
+          <ul>
+            <li ng-repeat="awnser in aid.quiz.awnsers">{{awnser}}</li>
+          </ul>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
   </ion-content>
 </ion-view>

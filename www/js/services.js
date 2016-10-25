@@ -4,9 +4,16 @@ angular.module('starter.services', [])
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var aids = [{
+  var aids = [
+  {
     id: 0,
-    name: 'Trauma'
+    name: 'Trauma',
+    steps: ["../img/adam.jpg", "../img/ben.png", "../img/ionic.png"],
+    quiz: {
+            question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend tincidunt turpis nec viverra?",
+            awnsers: ["Curabitur vel", "Felis eli", "Vivamus volutpat", "Lectus efficitur"],
+            correct: 2
+          }
   }];
 
   return {
