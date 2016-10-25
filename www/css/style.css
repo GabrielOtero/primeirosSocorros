@@ -1,3 +1,15 @@
+.step.center{
+	text-align: center;
+}
+
+.step, .step img{
+	height: inherit;
+}
+
 .slider{
 	height: 100%;
+}
+
+.slide-quiz{
+	overflow: scroll;
 }

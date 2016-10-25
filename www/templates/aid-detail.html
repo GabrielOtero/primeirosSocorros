@@ -2,16 +2,25 @@
   <ion-content class="dark-background login">
     <ion-slide-box>
       <ion-slide ng-repeat="step in aid.steps">
-        <div class="step">
+        <div class="step center">
           <img ng-src="{{step}}">
         </div>
       </ion-slide>
-      <ion-slide>
-        <div class="step">
+      <ion-slide class="slide-quiz">
+        <div class="step quiz">
           <h1>{{aid.quiz.question}}</h1>
           <ul>
             <li ng-repeat="awnser in aid.quiz.awnsers">{{awnser}}</li>
           </ul>
+          <h1>Scroll</h1>
+          <h1>Scroll</h1>
+          <h1>Scroll</h1>
+          <h1>Scroll</h1>
+          <h1>Scroll</h1>
+          <h1>Scroll</h1>
+          <h1>Scroll</h1>
+          <h1>Scroll</h1>
+
         </div>
       </ion-slide>
     </ion-slide-box>
