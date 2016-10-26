@@ -20,11 +20,11 @@
 }
 
 .step, .step img{
-	height: inherit;
+	height: 100vh;
 }
 
 .slider{
-	height: 100%;
+	height: 100vh;
 }
 
 .slide-quiz{
