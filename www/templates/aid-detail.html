@@ -6,12 +6,14 @@
           <img ng-src="{{step}}">
         </div>
       </ion-slide>
-      <ion-slide class="slide-quiz">
+      <ion-slide class="slide-quiz" ng-if="aid.quiz">
         <div class="step quiz">
           <h1>{{aid.quiz.question}}</h1>
           <ul>
             <li ng-repeat="awnser in aid.quiz.awnsers">{{awnser}}</li>
           </ul>
+          <br>
+          <button>Confirmar</button>
           <h1>Scroll</h1>
           <h1>Scroll</h1>
           <h1>Scroll</h1>
