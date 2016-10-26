@@ -7,8 +7,13 @@
 }
 
 .yellow{
-	color: #FFF9CF;
+	color: #FFFACD;
 }
+
+.purple{
+	color: #7668B6;	
+}
+
 
 .step.center{
 	text-align: center;
@@ -24,4 +29,69 @@
 
 .slide-quiz{
 	overflow: scroll;
+}
+
+.item{
+   background: url("../img/desmaio/desmaio1.png") 0 0 repeat;
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  margin-top: 12px;
+  border: 0;
+}
+
+.item-content{
+	background-color: #FDE5DC !important;
+}
+
+.item-content h2{
+	color: #7668B6 !important;
+}
+
+.item h2{
+	font-family: "SFSlapstickComic";
+	font-size: 5vw;
+	margin-top: 10px;
+}
+
+.list{
+	padding: 10px;
+	padding-top: 20px;
+}
+
+.title, .under-title{
+	font-family: "SFSlapstickComic";
+	margin: 0;	
+}
+
+.title{
+	margin-left: -80px;
+}
+
+.under-title{
+	margin-left: 80px;
+}
+
+.yellow-background{
+	background-color: #FFFACD;
+}
+
+.item-avatar .item-content{
+	padding-left: 50px;
+}
+
+h1:first-child{
+	margin-top: 15px;
+}
+
+@font-face {
+    font-family: "SFSlapstickComic";
+    src: url(../fonts/SFSlapstickComic.ttf);
+}
+
+@font-face {
+    font-family: "HumanistLight";
+    src: url(../fonts/HumanistLight.otf);
 }
