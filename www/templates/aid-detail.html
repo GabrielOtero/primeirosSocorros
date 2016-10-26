@@ -1,7 +1,12 @@
 <ion-view hide-nav-bar="true" scroll="false">
   <ion-content class="dark-background login">
     <ion-slide-box>
-    <ion-slide class="slide-quiz" ng-if="aid.quiz">
+      <ion-slide ng-repeat="step in aid.steps">
+        <div class="step center">
+          <img ng-src="{{step}}">
+        </div>
+      </ion-slide>
+      <ion-slide class="slide-quiz" ng-if="aid.quiz">
         <div class="step quiz" ng-repeat="question in aid.quiz.questions">
           <h1>{{question.title}}</h1>
           <div class="awnser" ng-repeat="awn in question.awnsers track by $index">
@@ -9,11 +14,6 @@
             ng-model="radioawn">
             <span class="purple" ng-click="radioawn = {{$index}}">{{awn}}</span>
           </div>
-        </div>
-      </ion-slide>
-      <ion-slide ng-repeat="step in aid.steps">
-        <div class="step center">
-          <img ng-src="{{step}}">
         </div>
       </ion-slide>
     </ion-slide-box>

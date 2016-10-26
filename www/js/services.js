@@ -116,7 +116,7 @@ angular.module('starter.services', [])
             questions: [
               {
                 title: "O que é uma parada cardiorrespiratória?",
-                awnsers: ["É quando a pessoa para de respirar e o coração dela para de bater.", "É somente quando a pessoa para de respirar.", "É somente quando o coração para de bater.", "É quando a pessoa precisa de ajuda para respirar."]
+                awnsers: ["É quando a pessoa para de respirar e o coração dela para de bater.", "É somente quando a pessoa para de respirar.", "É somente quando o coração para de bater.", "É quando a pessoa precisa de ajuda para respirar."],
                 correct: 0
               },
               {
