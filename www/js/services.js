@@ -22,7 +22,7 @@ angular.module('starter.services', [])
     name: 'Engasgo',
     steps: ["img/engasgo/engasgo1.png", "img/engasgo/engasgo2.png", 
             "img/engasgo/engasgo3.png", "img/engasgo/engasgo4.png", 
-            "img/engasgo/engasgo5.png", ],
+            "img/engasgo/engasgo5.png" ],
     quiz: {
             question: "",
             awnsers: [""],
@@ -55,7 +55,7 @@ angular.module('starter.services', [])
     name: 'Parada Cardiorrespiratória',
     steps: ["img/parada/parada1.png", "img/parada/parada2.png", 
             "img/parada/parada3.png", "img/parada/parada4.png", 
-            "img/parada/trauma5.png", "img/parada/trauma6.png"],
+            "img/parada/parada5.png", "img/parada/parada6.png"],
     quiz: {
             question: "",
             awnsers: [""],
