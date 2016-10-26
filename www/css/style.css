@@ -31,6 +31,30 @@
 	overflow: scroll;
 }
 
+.quiz{
+	background-color: #FFFACD;
+	padding: 20px;
+	height: auto;
+}
+
+.quiz h1{
+	color: #EA272D;
+	font-family: "SFSlapstickComic";
+	font-size: 6.5vw;
+}
+
+.awnser{
+	font-family: "HumanistLight";
+	font-size: 3.5vw;
+	line-height: 1.5;
+}
+
+.awnser input{
+	width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
 .item{
    background: url("../img/desmaio/desmaio1.png") 0 0 repeat;
   -webkit-transform: rotate(-4deg);
@@ -64,6 +88,7 @@
 .title, .under-title{
 	font-family: "SFSlapstickComic";
 	margin: 0;	
+	font-size: 9.5vw;
 }
 
 .title{
@@ -82,8 +107,8 @@
 	padding-left: 50px;
 }
 
-h1:first-child{
-	margin-top: 15px;
+center h1:first-child{
+	margin-top: 30px;
 }
 
 @font-face {
