@@ -1,3 +1,15 @@
+.red{
+	color: #EA272D;
+}
+
+.light-red{
+	color: #FDE5DC;
+}
+
+.yellow{
+	color: #FFF9CF;
+}
+
 .step.center{
 	text-align: center;
 }
