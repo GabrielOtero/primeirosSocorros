@@ -175,7 +175,7 @@ center h1:first-child{
     -ms-transform: rotate(-20deg);
     -o-transform: rotate(-20deg);
     transform: rotate(-20deg);
-    right: 15vh;
+    right: -5vh;
 }
 
 .correctAwnser label.wrong{
