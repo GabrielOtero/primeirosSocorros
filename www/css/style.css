@@ -38,7 +38,7 @@
 
 
 .quiz h1{
-	color: #EA272D;
+	color: #7668B6;
 	font-family: "SFSlapstickComic";
 	font-size: 6.5vw;
 }
@@ -150,7 +150,40 @@ center h1:first-child{
 	font-size: 4vw;
 	line-height: 1.5;
 	font-weight: bold;
+	display: block;
+}
 
+.correctAwnser label:first-child{
+	color: #e42112;
+    font-family: "HumanistLight";
+	font-size: 4vw;
+	line-height: 1.5;
+	font-weight: bold;
+	display: block;
+}
+
+.correctAwnser label.correct, .correctAwnser label.wrong{
+    position: absolute;
+    font-family: "SFSlapstickComic";
+    font-size: 5vw;
+    line-height: 1.5;
+    font-weight: bold;
+    display: block;
+    margin-top: -10vh;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    right: 15vh;
+}
+
+.correctAwnser label.wrong{
+	color: #e42112;
+}
+
+.correctAwnser label.correct{
+	color: #33cd5f;
 }
 
 @font-face {

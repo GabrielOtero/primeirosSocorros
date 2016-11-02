@@ -15,19 +15,19 @@ angular.module('starter.controllers', [])
 
 .controller('AidQuizCtrl', function($scope, $stateParams, $ionicScrollDelegate, aidService) {
 	$scope.questions = aidService.get($stateParams.aidId).quiz.questions;
-
 	$scope.hasAnswered = false;
+	$scope.radioawn = [];
 
 	$scope.send = function(){
 		$scope.hasAnswered = true;
 		$ionicScrollDelegate.scrollTop(true);
 	}
 
-	$scope.bla = function(selected, question){
+	$scope.select = function(selected, question, parentIdx){
 		if(selected == question.correct){
 			console.info(question.title);
 			console.info("correct");
 		}
-		$scope.radioawn = selected;
+		$scope.radioawn[parentIdx] = selected;
 	}
 });
