@@ -16,7 +16,7 @@ angular.module('starter.services', [])
               {
                 title: "O que é um trauma?",
                 awnsers: ["É um tipo de fratura óssea.", "É uma doença transmitida pelo ar.", "É uma doença do coração.", "É uma doença do coração."],
-                correct: 3
+                correct: 0
               },
               {
                 title: "Qual a primeira coisa a se fazer em uma situação de trauma?",

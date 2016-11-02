@@ -5,11 +5,10 @@
 	  <div class="awnser" ng-repeat="awn in question.awnsers track by $index" ng-show="!hasAnswered">
     	<input type="radio" name="question{{$parent.$index}}" value="{{$index}}" 
     	ng-model="radioawn">
-    	<span class="purple" ng-click="radioawn = {{$index}}">{{awn}}</span>
+    	<span class="purple" ng-click="bla({{$index}}, question)">{{awn}}</span>
 	  </div>
 	  <div ng-show="hasAnswered" class="correctAwnser">
 	    	<label>{{question.awnsers[question.correct]}}</label>
-	    	<label>{{question.awnsers[radioawn]}}</label>
 	    </div>
 	</div>
 

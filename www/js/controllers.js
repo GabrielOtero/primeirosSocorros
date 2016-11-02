@@ -19,8 +19,15 @@ angular.module('starter.controllers', [])
 	$scope.hasAnswered = false;
 
 	$scope.send = function(){
-		console.info("asdf");
 		$scope.hasAnswered = true;
 		$ionicScrollDelegate.scrollTop(true);
+	}
+
+	$scope.bla = function(selected, question){
+		if(selected == question.correct){
+			console.info(question.title);
+			console.info("correct");
+		}
+		$scope.radioawn = selected;
 	}
 });
