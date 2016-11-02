@@ -121,7 +121,7 @@ center h1:first-child{
 	padding: 10vh 10vh 0 10vh;
 }
 
-.quiz button{
+.quiz button, .quiz a{
 	width: 100%;
 	font-family: "SFSlapstickComic";
 	font-size: 5vw;
@@ -142,6 +142,15 @@ center h1:first-child{
 	font-size: 5vw;
 	padding: 2vw;
 	margin-top: 5vw;
+}
+
+.correctAwnser label{
+	color: #33cd5f;
+    font-family: "HumanistLight";
+	font-size: 4vw;
+	line-height: 1.5;
+	font-weight: bold;
+
 }
 
 @font-face {

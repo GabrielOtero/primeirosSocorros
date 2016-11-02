@@ -13,7 +13,14 @@ angular.module('starter.controllers', [])
   $scope.aid = aidService.get($stateParams.aidId);
 })
 
-.controller('AidQuizCtrl', function($scope, $stateParams, aidService) {
+.controller('AidQuizCtrl', function($scope, $stateParams, $ionicScrollDelegate, aidService) {
 	$scope.questions = aidService.get($stateParams.aidId).quiz.questions;
 
+	$scope.hasAnswered = false;
+
+	$scope.send = function(){
+		console.info("asdf");
+		$scope.hasAnswered = true;
+		$ionicScrollDelegate.scrollTop(true);
+	}
 });
