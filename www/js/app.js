@@ -56,6 +56,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'AidDetailCtrl'
         }
       }
+    })
+    .state('tab.aid-quiz', {
+      url: '/aids/:aidId/quiz',
+      views: {
+        'tab-aids': {
+          templateUrl: 'templates/aid-quiz.html',
+          controller: 'AidQuizCtrl'
+        }
+      }
     });
 
   // if none of the above states are matched, use this as the fallback

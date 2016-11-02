@@ -31,11 +31,11 @@
 	overflow: scroll;
 }
 
-.quiz{
-	background-color: #FFFACD;
-	padding: 20px;
-	height: auto;
+
+.slider-slides{
+	height: 100vh !important;
 }
+
 
 .quiz h1{
 	color: #EA272D;
@@ -45,7 +45,7 @@
 
 .awnser{
 	font-family: "HumanistLight";
-	font-size: 3.5vw;
+	font-size: 4vw;
 	line-height: 1.5;
 }
 
@@ -109,6 +109,27 @@
 
 center h1:first-child{
 	margin-top: 30px;
+}
+
+.quiz{
+	background-color: #FFFACD;
+	padding: 20px;
+}
+
+.last{
+	background-color: #FFFACD;
+	padding: 20px;
+	height: 100vh;
+	padding-top: 10vw;
+}
+
+.step.last a{
+	font-family: "SFSlapstickComic";
+	display: block;
+	margin: 0 auto;
+	font-size: 5vw;
+	padding: 2vw;
+	margin-top: 5vw;
 }
 
 @font-face {

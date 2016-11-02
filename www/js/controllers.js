@@ -11,4 +11,9 @@ angular.module('starter.controllers', [])
 
 .controller('AidDetailCtrl', function($scope, $stateParams, aidService) {
   $scope.aid = aidService.get($stateParams.aidId);
+})
+
+.controller('AidQuizCtrl', function($scope, $stateParams, aidService) {
+	$scope.questions = aidService.get($stateParams.aidId).quiz.questions;
+
 });

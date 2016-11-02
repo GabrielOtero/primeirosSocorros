@@ -7,13 +7,13 @@
         </div>
       </ion-slide>
       <ion-slide class="slide-quiz" ng-if="aid.quiz">
-        <div class="step quiz" ng-repeat="question in aid.quiz.questions">
-          <h1>{{question.title}}</h1>
-          <div class="awnser" ng-repeat="awn in question.awnsers track by $index">
-            <input type="radio" name="question{{$parent.$index}}" value="{{$index}}" 
-            ng-model="radioawn">
-            <span class="purple" ng-click="radioawn = {{$index}}">{{awn}}</span>
-          </div>
+        <div class="step last">
+          <a class="button button-positive" href="#/tab/aids/{{aid.id}}/quiz">
+            Agora responda...
+          </a>
+          <a class="button button-stable" href="#/tab/aids">
+            Voltar para o menu
+          </a>
         </div>
       </ion-slide>
     </ion-slide-box>
