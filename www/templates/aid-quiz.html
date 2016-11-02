@@ -1,6 +1,6 @@
 <ion-view hide-nav-bar="true" scroll="true">
-  <ion-content>
-    <div class="quiz" ng-repeat="question in questions">
+  <ion-content class="quiz" >
+    <div class="question" ng-repeat="question in questions">
 	  <h1>{{question.title}}</h1>
 	  <div class="awnser" ng-repeat="awn in question.awnsers track by $index">
 	    <input type="radio" name="question{{$parent.$index}}" value="{{$index}}" 
@@ -8,5 +8,9 @@
 	    <span class="purple" ng-click="radioawn = {{$index}}">{{awn}}</span>
 	  </div>
 	</div>
+
+	<button class="button button-balanced">
+        Enviar!
+    </button>
   </ion-content>
 </ion-view>

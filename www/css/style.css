@@ -111,9 +111,21 @@ center h1:first-child{
 	margin-top: 30px;
 }
 
+
+.question{
+	margin-bottom: 15vh;
+}
+
 .quiz{
 	background-color: #FFFACD;
-	padding: 20px;
+	padding: 10vh 10vh 0 10vh;
+}
+
+.quiz button{
+	width: 100%;
+	font-family: "SFSlapstickComic";
+	font-size: 5vw;
+	padding: 2vw;
 }
 
 .last{
