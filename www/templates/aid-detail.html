@@ -8,10 +8,10 @@
       </ion-slide>
       <ion-slide class="slide-quiz" ng-if="aid.quiz">
         <div class="step last">
-          <a class="button button-positive" href="#/tab/aids/{{aid.id}}/quiz">
+          <a class="button button-positive" href="#/tab/aids/{{aid.id}}/quiz" ng-click="slideToZero()">
             Agora responda...
           </a>
-          <a class="button button-stable" href="#/tab/aids">
+           <a class="button button-stable" href="#/tab/aids" ng-click="slideToZero()">
             Voltar para o menu
           </a>
         </div>

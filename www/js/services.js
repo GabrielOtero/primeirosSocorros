@@ -15,8 +15,8 @@ angular.module('starter.services', [])
             questions: [
               {
                 title: "O que é um trauma?",
-                awnsers: ["É um tipo de fratura óssea.", "É uma doença transmitida pelo ar.", "É uma doença do coração.", "É uma doença do coração."],
-                correct: 0
+                awnsers: ["É um tipo de fratura óssea.", "É uma doença transmitida pelo ar.", "É uma doença do coração.", "É uma lesão causada por um golpe ou impacto."],
+                correct: 3
               },
               {
                 title: "Qual a primeira coisa a se fazer em uma situação de trauma?",
@@ -66,7 +66,7 @@ angular.module('starter.services', [])
             questions: [
               {
                 title: "O que é Convulsão?",
-                awnsers: ["É quando uma pessoa que desmaia com o corpo tenso e apresenta movimento.", "É uma doença contagiosa que não pode se aproximar da pessoa.", "É uma doença contagiosa que não pode se aproximar da pessoa.", "É uma doença que causa problemas no cérebro e deixa a pessoa acamada."],
+                awnsers: ["É quando uma pessoa que desmaia com o corpo tenso e apresenta movimento.", "É uma doença contagiosa que não pode se aproximar da pessoa.", "É quando a pessoa desmaia e apresenta movimentos na tentativa de se levantar.", "É uma doença que causa problemas no cérebro e deixa a pessoa acamada."],
                 correct: 0
               },
               {

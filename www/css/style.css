@@ -50,9 +50,40 @@
 }
 
 .awnser input{
-	width: 15px;
-    height: 15px;
-    margin-right: 10px;
+	width: 6vh;
+    height: 6vh;
+    margin-right: 2vh;
+}
+
+.awnser input[type=radio] {
+    display: none;
+}
+.awnser input[type=radio] + span::before {
+    content: '';
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 10%;
+    margin: 0 0.5em;
+}
+.awnser input[type=radio]:checked + span::before{
+    background: url("../img/check.png") 0 0 repeat;
+    background-size: 5vh;
+    background-color: #aaffc5;
+
+    -webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+.awnser input[type=radio]:checked + span{
+	font-weight: bolder;	
+}
+
+.awnser input + span::before {
+    width: 5.2vh;
+    height: 5.2vh;
 }
 
 .item{

@@ -4,7 +4,7 @@
 	  <h1>{{question.title}}</h1>
 	  <div class="awnser" ng-repeat="awn in question.awnsers track by $index" ng-show="!hasAnswered">
     	<input type="radio" name="question{{$parent.$index}}" value="{{$index}}" 
-    	ng-model="radioawn[$parent.$index]">
+    	ng-model="radioawn[$parent.$index]" ng-click="select({{$index}}, question, {{$parent.$index}})">
     	<span class="purple" ng-click="select({{$index}}, question, {{$parent.$index}})">{{awn}}</span>
 	  </div>
 	  <div ng-show="hasAnswered" class="correctAwnser">
