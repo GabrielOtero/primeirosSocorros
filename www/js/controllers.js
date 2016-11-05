@@ -29,6 +29,13 @@ angular.module('starter.controllers', [])
 	$scope.send = function(){
 		$ionicScrollDelegate.scrollTop(true);
 		$scope.hasAnswered = true;
+
+		if(window && window.FirebasePlugin){
+			window.FirebasePlugin.logEvent("page_view", {page: "dashboard"});	
+		}else{
+			console.log("Firebase event not logged");
+		}
+		
 	}
 
 	$scope.select = function(selected, question, parentIdx){
