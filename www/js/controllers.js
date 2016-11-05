@@ -15,7 +15,9 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AidQuizCtrl', function($scope, $stateParams, $ionicScrollDelegate ,aidService) {
-	$scope.questions = aidService.get($stateParams.aidId).quiz.questions;
+	$scope.aid = aidService.get($stateParams.aidId);
+	
+	$scope.questions = $scope.aid.quiz.questions;
 	$scope.hasAnswered = false;
 	$scope.radioawn = [];
 
@@ -30,11 +32,29 @@ angular.module('starter.controllers', [])
 		$ionicScrollDelegate.scrollTop(true);
 		$scope.hasAnswered = true;
 
-		if(window && window.FirebasePlugin){
-			window.FirebasePlugin.logEvent("page_view", {page: "dashboard"});	
-		}else{
-			console.log("Firebase event not logged");
-		}
+		$scope.questions.forEach(function(question, idx){
+			var selectedAwns = question.awnsers[$scope.radioawn[idx]];
+			var correctAwns = question.awnsers[question.correct];
+			var isCorrect = selectedAwns === correctAwns;
+
+			var logObj = {
+				"Pergunta" : question.title,
+				"Acertou" : isCorrect ? "Sim" : "Nao",
+			}
+
+			if(!isCorrect){
+				logObj["Resposta Selecionada"] = selectedAwns;
+			}
+
+			if(window && window.FirebasePlugin){
+				window.FirebasePlugin.logEvent("Quiz "+ $scope.aid.name, logObj);	
+			}else{
+				console.log(">Firebase event not logged<");
+				console.info("Quiz "+ $scope.aid.name);
+				console.info(logObj);
+			}
+		})
+
 		
 	}
 
