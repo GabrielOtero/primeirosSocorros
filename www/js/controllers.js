@@ -8,7 +8,7 @@ angular.module('starter.controllers', [])
   	if(window && window.FirebasePlugin){
 		window.FirebasePlugin.logEvent("Evento", "Teste");	
 	}
-	$scope.$on('$ionicView.afterEnter', function(){
+	$scope.$on('$ionicView.beforeEnter', function(){
 	  window.screen.lockOrientation('portrait');
 	});
 
@@ -19,10 +19,7 @@ angular.module('starter.controllers', [])
 
   	$scope.$on('$ionicView.beforeEnter', function(){
 		$ionicSlideBoxDelegate.slide(0);
-	});
-
-	$scope.$on('$ionicView.afterEnter', function(){
-	  window.screen.lockOrientation('landscape');
+		window.screen.lockOrientation('landscape');
 	});
 })
 
@@ -34,14 +31,10 @@ angular.module('starter.controllers', [])
 	$scope.radioawn = [];
 
 	$scope.$on('$ionicView.beforeEnter', function(){
-	  $scope.hasAnswered = false;
-	  $scope.radioawn = [];
-	  $ionicScrollDelegate.scrollTop(true);
-
-	});
-
-	$scope.$on('$ionicView.afterEnter', function(){
- 		window.screen.lockOrientation('landscape');
+	  	$scope.hasAnswered = false;
+	  	$scope.radioawn = [];
+	  	$ionicScrollDelegate.scrollTop(true);
+		window.screen.lockOrientation('landscape');
 	});
 
 	$scope.send = function(){
