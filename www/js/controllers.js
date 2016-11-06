@@ -3,14 +3,26 @@ angular.module('starter.controllers', [])
 .controller('DashCtrl', function($scope) {})
 
 .controller('AidsCtrl', function($scope, aidService) {
-  $scope.aids = aidService.all();
+  	$scope.aids = aidService.all();
+
+  	if(window && window.FirebasePlugin){
+		window.FirebasePlugin.logEvent("Evento", "Teste");	
+	}
+	$scope.$on('$ionicView.afterEnter', function(){
+	  window.screen.lockOrientation('portrait');
+	});
+
 })
 
 .controller('AidDetailCtrl', function($scope, $stateParams, $ionicSlideBoxDelegate, aidService) {
-  $scope.aid = aidService.get($stateParams.aidId);
+  	$scope.aid = aidService.get($stateParams.aidId);
 
-  $scope.$on('$ionicView.beforeEnter', function(){
+  	$scope.$on('$ionicView.beforeEnter', function(){
 		$ionicSlideBoxDelegate.slide(0);
+	});
+
+	$scope.$on('$ionicView.afterEnter', function(){
+	  window.screen.lockOrientation('landscape');
 	});
 })
 
@@ -26,6 +38,10 @@ angular.module('starter.controllers', [])
 	  $scope.radioawn = [];
 	  $ionicScrollDelegate.scrollTop(true);
 
+	});
+
+	$scope.$on('$ionicView.afterEnter', function(){
+ 		window.screen.lockOrientation('landscape');
 	});
 
 	$scope.send = function(){
