@@ -6,6 +6,11 @@ angular.module('starter.services', [])
   // Some fake testing data
   var aids = [
   {
+    id: 0,
+    name: 'O que é',
+    steps: ["img/sobre/sobre1.png"]
+  },
+  {
     id: 1,
     name: 'Trauma',
     steps: ["img/trauma/trauma1.png", "img/trauma/trauma2.png", 

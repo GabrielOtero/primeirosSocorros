@@ -109,11 +109,12 @@
 	font-family: "SFSlapstickComic";
 	font-size: 5vw;
 	margin-top: 10px;
+	text-align: center;
 }
 
 .list{
-	padding: 10px;
-	padding-top: 20px;
+	padding: 2vh;
+	padding-top: 5vh;
 }
 
 .title, .under-title{
@@ -139,7 +140,7 @@
 }
 
 center h1:first-child{
-	margin-top: 30px;
+	margin-top: 10vw;
 }
 
 
@@ -215,6 +216,19 @@ center h1:first-child{
 
 .correctAwnser label.correct{
 	color: #33cd5f;
+}
+
+.ambulance-img{
+    width: 30vw;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    position: absolute;
+    -ms-filter: "FlipH";
+    top: 14vw;
+    left: 6vw;
 }
 
 @font-face {
