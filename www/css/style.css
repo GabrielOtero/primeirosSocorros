@@ -148,6 +148,10 @@ center h1:first-child{
 	margin-bottom: 15vh;
 }
 
+.quiz a:last-child{
+	margin-top: 4vh;
+}
+
 .quiz{
 	background-color: #FFFACD;
 	padding: 10vh 10vh 0 10vh;

@@ -25,7 +25,11 @@ angular.module('starter.controllers', [])
 
 .controller('AidQuizCtrl', function($scope, $stateParams, $ionicScrollDelegate ,aidService) {
 	$scope.aid = aidService.get($stateParams.aidId);
-	
+
+	$scope.aidNextId = parseInt($stateParams.aidId) + 1;
+	$scope.nextAidName  = aidService.get($scope.aidNextId).name;
+
+
 	$scope.questions = $scope.aid.quiz.questions;
 	$scope.hasAnswered = false;
 	$scope.radioawn = [];
