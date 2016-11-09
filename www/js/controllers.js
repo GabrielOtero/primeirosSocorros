@@ -31,7 +31,7 @@ angular.module('starter.controllers', [])
 	$scope.nextAid = aidService.get($scope.aidNextId);
 
 	if($scope.nextAid){
-		$scope.nextAidName  = nextAid.name;	
+		$scope.nextAidName  = $scope.nextAid.name;	
 	}
 
 	$scope.questions = $scope.aid.quiz.questions;
