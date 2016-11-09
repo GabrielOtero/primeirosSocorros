@@ -27,8 +27,12 @@ angular.module('starter.controllers', [])
 	$scope.aid = aidService.get($stateParams.aidId);
 
 	$scope.aidNextId = parseInt($stateParams.aidId) + 1;
-	$scope.nextAidName  = aidService.get($scope.aidNextId).name;
 
+	$scope.nextAid = aidService.get($scope.aidNextId);
+
+	if($scope.nextAid){
+		$scope.nextAidName  = nextAid.name;	
+	}
 
 	$scope.questions = $scope.aid.quiz.questions;
 	$scope.hasAnswered = false;
