@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.unicamp.primeiros_socorros" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.unicamp.PrimeirosSocorros" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Primeiros Socorros</name>
     <description>
         Projeto de Primeiros Socorros
@@ -71,6 +71,7 @@
         <icon height="87" src="resources/ios/icon/icon-small@3x.png" width="87" />
     </platform>
     <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
-    <plugin name="cordova-plugin-firebase" spec="~0.1.18" />
     <plugin name="cordova-plugin-screen-orientation" spec="~1.4.2" />
+    <plugin name="cordova-plugin-firebase" spec="0.1.18" />
+
 </widget>
