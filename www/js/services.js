@@ -113,7 +113,7 @@ angular.module('starter.services', [])
   },
   {
     id: 5,
-    name: 'Parada Cardiorrespiratória',
+    name: 'Parada',
     steps: ["img/parada/parada1.png", "img/parada/parada2.png", 
             "img/parada/parada3.png", "img/parada/parada4.png", 
             "img/parada/parada5.png", "img/parada/parada6.png"],

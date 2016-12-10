@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "1036551305574",
-    "firebase_url": "https://primeiros-socorros-2bf11.firebaseio.com",
-    "project_id": "primeiros-socorros-2bf11",
-    "storage_bucket": "primeiros-socorros-2bf11.appspot.com"
+    "project_number": "402354475794",
+    "firebase_url": "https://primeirossocorros-f31ab.firebaseio.com",
+    "project_id": "primeirossocorros-f31ab",
+    "storage_bucket": "primeirossocorros-f31ab.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1036551305574:android:5f7cdcf6a2752f61",
+        "mobilesdk_app_id": "1:402354475794:android:0c686a6a67455500",
         "android_client_info": {
-          "package_name": "br.unicamp.primeiros_socorros"
+          "package_name": "br.unicamp.PrimeirosSocorros"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1036551305574-gbmsddq6u28oqi7ib75ejodn4k3rsqto.apps.googleusercontent.com",
+          "client_id": "402354475794-mrabksu3siv5it96vtsb8dro6ahp6481.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyApUMyibZPdaG2Cj6K035ohBUSx4TGfKAk"
+          "current_key": "AIzaSyDiCZxRvPn-Ryf2xyIGmfobKjtxPHppp2Q"
         }
       ],
       "services": {

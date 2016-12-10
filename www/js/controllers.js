@@ -6,7 +6,7 @@ angular.module('starter.controllers', [])
   	$scope.aids = aidService.all();
 
   	if(window && window.FirebasePlugin){
-		window.FirebasePlugin.logEvent("Evento", "Teste");	
+  		window.FirebasePlugin.logEvent("page_view", {page: "menu"});
 	}
 	$scope.$on('$ionicView.beforeEnter', function(){
 	  window.screen.lockOrientation('portrait');
@@ -54,25 +54,19 @@ angular.module('starter.controllers', [])
 			var correctAwns = question.awnsers[question.correct];
 			var isCorrect = selectedAwns === correctAwns;
 
+			var choice = isCorrect ? "certa" : "errada"
 			var logObj = {
-				"Pergunta" : question.title,
-				"Acertou" : isCorrect ? "Sim" : "Nao",
-			}
-
-			if(!isCorrect){
-				logObj["Resposta Selecionada"] = selectedAwns;
+				 "resp" : $scope.radioawn[idx] + 1
 			}
 
 			if(window && window.FirebasePlugin){
-				window.FirebasePlugin.logEvent("Quiz "+ $scope.aid.name, logObj);	
+				window.FirebasePlugin.logEvent($scope.aid.name+"_Q_"+ (idx+1)+"_resp_"+ choice, logObj);	
 			}else{
 				console.log(">Firebase event not logged<");
-				console.info("Quiz "+ $scope.aid.name);
+				console.info($scope.aid.name+"_Q_"+ (idx+1)+"_resp_"+ choice);
 				console.info(logObj);
 			}
 		})
-
-		
 	}
 
 	$scope.select = function(selected, question, parentIdx){
