@@ -60,10 +60,10 @@ angular.module('starter.controllers', [])
 			}
 
 			if(window && window.FirebasePlugin){
-				window.FirebasePlugin.logEvent($scope.aid.name+"_Q_"+ (idx+1)+"_resp_"+ choice, logObj);	
+				window.FirebasePlugin.logEvent($scope.aid.alias+"_Q_"+ (idx+1)+"_resp_"+ choice, logObj);	
 			}else{
 				console.log(">Firebase event not logged<");
-				console.info($scope.aid.name+"_Q_"+ (idx+1)+"_resp_"+ choice);
+				console.info($scope.aid.alias+"_Q_"+ (idx+1)+"_resp_"+ choice);
 				console.info(logObj);
 			}
 		})

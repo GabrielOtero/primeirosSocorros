@@ -13,6 +13,7 @@ angular.module('starter.services', [])
   {
     id: 1,
     name: 'Trauma',
+    alias: 'Trauma',
     steps: ["img/trauma/trauma1.png", "img/trauma/trauma2.png", 
             "img/trauma/trauma3.png", "img/trauma/trauma4.png", 
             "img/trauma/trauma5.png", ],
@@ -39,6 +40,7 @@ angular.module('starter.services', [])
   {
     id: 2,
     name: 'Engasgo',
+    alias: 'Engasgo',
     steps: ["img/engasgo/engasgo1.png", "img/engasgo/engasgo2.png", 
             "img/engasgo/engasgo3.png", "img/engasgo/engasgo4.png", 
             "img/engasgo/engasgo5.png" ],
@@ -65,6 +67,7 @@ angular.module('starter.services', [])
   {
     id: 3,
     name: 'Convulsão',
+    alias: 'Convulsao',
     steps: ["img/convulcao/convulcao1.png", "img/convulcao/convulcao2.png", 
             "img/convulcao/convulcao3.png", "img/convulcao/convulcao4.png"],
     quiz: {
@@ -90,6 +93,7 @@ angular.module('starter.services', [])
   {
     id: 4,
     name: 'Desmaio',
+    alias: 'Desmaio',
     steps: ["img/desmaio/desmaio1.png", "img/desmaio/desmaio2.png"],
     quiz: {
             questions: [
@@ -113,7 +117,8 @@ angular.module('starter.services', [])
   },
   {
     id: 5,
-    name: 'Parada',
+    name: 'Parada Cardiorrespiratória',
+    alias: 'Parada',
     steps: ["img/parada/parada1.png", "img/parada/parada2.png", 
             "img/parada/parada3.png", "img/parada/parada4.png", 
             "img/parada/parada5.png", "img/parada/parada6.png"],

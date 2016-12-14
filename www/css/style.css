@@ -235,6 +235,12 @@ center h1:first-child{
     left: 6vw;
 }
 
+.back-button{
+    position: absolute;
+    padding: 5vh;
+    z-index: 5;
+}
+
 @font-face {
     font-family: "SFSlapstickComic";
     src: url(../fonts/SFSlapstickComic.ttf);
