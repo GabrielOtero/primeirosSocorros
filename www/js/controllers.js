@@ -15,11 +15,14 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AidDetailCtrl', function($scope, $stateParams, $ionicSlideBoxDelegate, aidService) {
-  	$scope.aid = aidService.get($stateParams.aidId);
-
   	$scope.$on('$ionicView.beforeEnter', function(){
 		$ionicSlideBoxDelegate.slide(0);
+		$scope.aid = aidService.get($stateParams.aidId);
 		window.screen.lockOrientation('landscape');
+	});
+
+	$scope.$on('$ionicView.enter', function(){
+		$ionicSlideBoxDelegate.update();
 	});
 })
 
