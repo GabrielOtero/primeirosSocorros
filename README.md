@@ -7,4 +7,4 @@ https://play.google.com/store/apps/details?id=br.unicamp.PrimeirosSocorros&hl=pt
 On Apple Store as Primeiros Socorros Unicamp
 
 Awarded as one of the best works for IG&T 2017 
-http://www.fenf.unicamp.br/noticias/2017/trabalho-de-docente-da-fenf-e-premiado-no-iv-congresso-mundial-de-cirurgia-de-emergencia-intergastro
+https://www.fenf.unicamp.br/pt-br/noticia/trabalho-de-docente-da-fenf-e-premiado-no-iv-congresso-mundial-de-cirurgia-de-emergencia
